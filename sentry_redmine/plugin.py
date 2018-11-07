@@ -28,12 +28,6 @@ class RedminePlugin(IssuePlugin):
  
     new_issue_form = RedmineNewIssueForm
     
-
-    def __init__(self):
-        super(RedminePlugin, self).__init__()
-        self.client_errors = []
-        self.fields = []
-    
     def has_project_conf(self):
         return True
 
